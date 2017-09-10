@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>공지사항 등록</h2>
+<form method='post' action='/notices'>
+    <ul>
+        <li> 제목 : <input type='text' name='noticeTitle'></li>
+        <dir></dir>
+        <li> 내용 : <textarea name='noticeContent' rows="5" cols="50"></textarea></li>
+    </ul>
+    <input type='submit' value='게시하기'>
+</form>
+
+<h2>입금 처리</h2>
+<span>
+    ErrandIdx : <input id='depositIdx' type='text' name='errandIdx'>
+    <input type='button' value='입금처리' onclick='sendPostDeposit();'>
+</span>
+
+<h2>환불 처리</h2>
+<span>
+    ErrandIdx : <input id='refundIdx' type='text' name='errandIdx'>
+    <input type='button' value='환불처리' onclick='sendPostRefund();'>
+</span>
+</body>
+<script>
+    function sendPostDeposit() {
+        var depositIdx = document.getElementById('depositIdx').value;
+        var url = '/errands/' + depositIdx + '/deposit';
+        $.ajax({
+            url: url,
+            type: 'post',
+            success: function (data) {
+                alert(data.msg);
+                document.getElementById('depositIdx').value = null;
+            }
+        });
+    }
+
+    function sendPostRefund() {
+        var refundIdx = document.getElementById('refundIdx').value;
+        var url = '/errands/' + refundIdx + '/refund';
+        $.ajax({
+            url: url,
+            type: 'post',
+            success: function () {
+                alert(data.msg);
+                document.getElementById('depositIdx').value = null;
+            }
+        });
+    }
+</script>
+</html>
