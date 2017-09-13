@@ -10,7 +10,7 @@ SK테크엑스 T아카데미
 #### 프로젝트 소개
 간김에는 지하철역 기반으로 진행되는 심부름 대행 서비스로 사용자는 동시에 심부름을 요청하는 "요청자"와 수행하여 수익을 얻는 "대행자" 역할이 될 수 있습니다.
 #### 작업 Commit 내역
-*작업 초기에 git config를 등록하지 않아서 Contributor에 속하지 않아서 저장소를 따로 분리했습니다.<br>
+*작업 초기 git config 미등록으로 Contributor에 포함되지 않아 저장소를 따로 분리했습니다.<br>
 당시 Commit 작업 내역을 확인하고 싶다면 [간김에_서버작업](https://github.com/hinco114/GANGIME)를 방문해주세요*
 <br></br>
 ## Development Info
