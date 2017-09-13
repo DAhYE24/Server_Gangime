@@ -1,6 +1,9 @@
 [Server] Gangime
 =================
 Gangime is a errand agent application(O2O Service) based on subway lines.
+## Image
+#### 서버 구성
+![server_diagram](https://i.imgur.com/Er9vXGR.jpg)
 <br></br>
 ## Project Info
 #### 수행기관
