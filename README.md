@@ -27,7 +27,7 @@ WebStorm(IntelliJ) / Javascript(中), Node.js(中), HTML(中), Jquery(下)
 * 심부름 진행 프로세스 설계
 #### 특징
 * Javascript ES6  작업 진행
-  * Promise의 콜백 지옥을 해결하기 위해서 Javascript ES8의 Async/Await 방식을 사용하여 비동기 방식의 문제점 해결
+  * Promise의 콜백 지옥을 해결하기 위해서 Javascript ES6의 Async/Await 방식을 사용하여 비동기 방식의 문제점 해결
 * AWS의 EC2, S3, RDS를 활용하여 서버 연동 작업 진행
 * JWT로 토큰을 암호화, 복호화 작업 진행
 * FCM을 통해서 심부름 상태를 사용자에게 전달
